@@ -11,18 +11,7 @@ public class PigLatin {
 		//output should be lowercase to avoid issues with capitalization
 		s = s.toLowerCase();
 		char first = s.charAt(0);
-		char[] vowels = {'a', 'e', 'i', 'o', 'u'};
-		String result = "";
-		for(int i = 0; i < vowels.length; i++) {
-			if(first != i) {
-				result = s + "hay";
-				break
-			}
-			else {
-				result = s.substring(1) + first + "ay";
-				break;
-			}
-		}
-		return result;
+		if(first == 'a' || first == 'e' || first == 'i' || first == 'o' || first == 'u') return s + "hay";
+		else return s.substring(1) + first + "ay";
 	}
 }
