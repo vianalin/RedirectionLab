@@ -14,8 +14,14 @@ public class PigLatin {
 		char[] vowels = {'a', 'e', 'i', 'o', 'u'};
 		String result = "";
 		for(int i = 0; i < vowels.length; i++) {
-			if(first = i) result = s + "hay";
-			else result = s.substring(1) + first + "ay";
+			if(first != i) {
+				result = s + "hay";
+				break
+			}
+			else {
+				result = s.substring(1) + first + "ay";
+				break;
+			}
 		}
 		return result;
 	}
