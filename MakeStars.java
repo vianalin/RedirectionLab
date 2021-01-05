@@ -11,7 +11,7 @@ public class MakeStars {
 				for(int i = 0; i < word.length(); i++) { //adding * to stars for each amount of letters
 					stars += "*";
 				}
-				System.out.println(stars + " "); //printing * with a space
+				System.out.print(stars + " "); //printing * with a space
 			}
 			System.out.println(); //printing new line after each line
 		}
