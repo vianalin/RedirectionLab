@@ -14,5 +14,15 @@ public class Tester{
 		System.out.println(PigLatin.pigLatin("SKEE").equals("eeskay"));
 		System.out.println(PigLatin.pigLatin("EmU").equals("emuhay"));
 		System.out.println(PigLatin.pigLatin("grade").equals("adegray"));
+
+		System.out.println("testing pig latin best: ");
+		System.out.println(PigLatin.pigLatinBest("*emu").equals("*emu"));
+		System.out.println(PigLatin.pigLatinBest("4cHAN").equals("4chan"));
+		System.out.println(PigLatin.pigLatinBest("fish!").equals("ishfay!"));
+		System.out.println(PigLatin.pigLatinBest("fish").equals("ishfay"));
+		System.out.println(PigLatin.pigLatinBest("the.").equals("ethay."));
+		System.out.println(PigLatin.pigLatinBest("CAT!").equals("atcay!"));
+		System.out.println(PigLatin.pigLatinBest("amazING?").equals("amazinghay?"));
+		System.out.println(PigLatin.pigLatinBest("apple%").equals("applehay%"));
 	}
 }
