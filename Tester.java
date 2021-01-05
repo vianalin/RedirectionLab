@@ -1,20 +1,18 @@
 public class Tester{
 	public static void main(String[] args) {
 		
-		//testing pig latin simple
-		String one = "hi";
-		System.out.println(PigLatin.pigLatinSimple(one).equals("ihay"));
+		System.out.println("testing pig latin simple: ");
+		System.out.println(PigLatin.pigLatinSimple("hi").equals("ihay"));
+		System.out.println(PigLatin.pigLatinSimple("anime").equals("animehay"));
+		System.out.println(PigLatin.pigLatinSimple("E").equals("ehay"));
+		System.out.println(PigLatin.pigLatinSimple("food").equals("oodfay"));
+		System.out.println(PigLatin.pigLatinSimple("IamtheBEst").equals("iamthebesthay"));
 
-		String two = "anime";
-		System.out.println(PigLatin.pigLatinSimple(two).equals("animehay"));
-
-		String three = "E";
-		System.out.println(PigLatin.pigLatinSimple(three).equals("ehay"));
-
-		String four = "food";
-		System.out.println(PigLatin.pigLatinSimple(four).equals("oodfay"));
-
-		String five = "IamtheBEst";
-		System.out.println(PigLatin.pigLatinSimple(five).equals("iamthebesthay"));
+		System.out.println("testing pig latin: ");
+		System.out.println(PigLatin.pigLatin("the").equals("ethay"));
+		System.out.println(PigLatin.pigLatin("check").equals("eckchay"));
+		System.out.println(PigLatin.pigLatin("SKEE").equals("eeskay"));
+		System.out.println(PigLatin.pigLatin("EmU").equals("emuhay"));
+		System.out.println(PigLatin.pigLatin("grade").equals("adegray"));
 	}
 }
